@@ -7,7 +7,7 @@ import Card from '../components/card';
 
 import { fetchCoffeeStores } from '../lib/coffee-stores';
 import useTrackLocation from '../hooks/use-track-location';
-import { ACTION_TYPES, StoreContext } from '../store/store-context';
+import { ACTION_TYPES, StoreContext } from '../context/store-context';
 
 // import coffeeStoresData from '../data/coffee-store.json';
 
