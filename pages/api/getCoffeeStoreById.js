@@ -19,7 +19,7 @@ const getCoffeeStoreById = async (req, res) => {
     }
   } catch (e) {
     console.log(e);
-    res.status(500).json({ message: 'Something went wrong', e });
+    res.status(500).json({ message: 'Something went wrong' });
   }
 };
 
