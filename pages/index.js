@@ -65,6 +65,8 @@ export default function Home(props) {
       <Head>
         <title>Coffee Connoisseur</title>
         <link rel='icon' href='/favicon.ico' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta name='description' content='Allows you to discovery coffee stores' />
       </Head>
 
       <main className={styles.main}>
@@ -80,7 +82,12 @@ export default function Home(props) {
           <span>Something went wrong: {coffeeStoresError}</span>
         )}
         <div className={styles.heroImage}>
-          <Image src='/static/hero-image.png' width={700} height={400} />
+          <Image
+            src='/static/hero-image.png'
+            width={700}
+            height={400}
+            alt='hero image'
+          />
         </div>
 
         {coffeeStores.length > 0 && (
