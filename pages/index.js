@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -12,7 +12,6 @@ import { ACTION_TYPES, StoreContext } from '../context/store-context';
 // import coffeeStoresData from '../data/coffee-store.json';
 
 import styles from '../styles/home.module.css';
-import { useEffect } from 'react';
 
 export async function getStaticProps(context) {
   const coffeeStores = await fetchCoffeeStores();
@@ -36,7 +35,6 @@ export default function Home(props) {
     useTrackLocation();
 
   const handleOnBannerBtnClick = async () => {
-    console.log('Hi banner button');
     handleTrackLocation();
   };
 
